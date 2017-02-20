@@ -1,0 +1,233 @@
+*{
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif;/* move to body ? */
+	color: #333333;
+}
+
+body {
+	height: 2000px;
+}
+.container {
+	position: relative;
+	top: 200px;
+	width: 100%;
+	height: 791px;
+	padding: 0px;/*what a margin does.shareBlock have ??*/
+
+}
+
+.bgrnd {/*reduce taking into acc. .container??*/
+	position: relative;/*??? margin:auto doesnt work with absolut*/
+	top: 0px;
+	width: 559px;
+	margin:auto;
+}
+
+header {
+	font-size: 24px;
+	background-color: #39B54A; 
+
+}
+
+
+
+.sheet-semantic, .sheet-pseudo-1, .sheet-pseudo-2 {
+	position: absolute;
+	width: 519px;
+	height: 751px;
+	border: 2px solid #000000;
+}
+.sheet-semantic {	
+	background-color: #EBEBEB;
+	padding: 39px 31px 46px 31px;
+	font-size: 12px;
+}
+.sheet-pseudo-1 {
+	z-index: -1;
+	top: 20px;
+	left: 20px;
+	background-color: #CCCCCC;
+}
+.sheet-pseudo-2 {
+	z-index: -2;
+	top: 40px;
+	left: 40px;
+	background-color: #ACACAC;
+}
+.sheet-semantic::before,  .sheet-pseudo-1::before, .sheet-pseudo-2::before {
+	content: "";
+	position: absolute;
+	width: 111px;
+	height: 35px;
+	border: inherit;/*remove inhereted by default proprties*/
+	top: 41px;
+	left: 492px;
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+}
+
+.sheet-semantic::before { 	
+	background-color: #F68E56; 
+}
+.sheet-pseudo-1::before { 	
+	background-color: #39B54A; 
+	width:76px; 
+}
+.sheet-pseudo-2::before { 	
+	background-color: #00AEEF; 	
+	width:46px;  
+}
+
+/*
+.sheet-pseudo-1::before { 	background-color: #39B54A; 	position: relative; right: 48; }
+.sheet-pseudo-2::before { 	background-color: #00AEEF; 	position: relative; right: 58; }
+*/
+
+.main-article-block {
+
+	background-color: #CCCCCC;
+	padding-top: 14px;
+	overflow: hidden;
+}
+
+p {
+	margin-top: 0px;
+	margin-bottom: 11px;
+	border: 1px solid #000000;
+	/*margin-top: -5px; why img moving with p??  */
+}
+/*
+p::first-line {
+	line-height: 0;
+	}*/
+
+	img#img1 {
+		float: left;
+		margin-right:21px;
+	}
+
+	img#img2 { /* width/height ??? */
+		float: right;
+		margin-left:6px;
+
+	}
+
+
+	.sub-article-block {
+		padding-top: 18px;
+	}
+
+	/*delete!!!*/
+	.sub-article {
+		border: 1px solid #000000;
+	}
+
+	.sub-article h2 {
+		font-size: 18px;
+		margin:0px;
+		/*font-weight: normal;*/
+		background-color: #39B54A; 
+
+	}
+
+	.img-container {
+		padding-top: 18px;
+	}
+
+
+
+	ul.img-list {
+		margin: 0px;
+		padding: 0px; 
+		width: 100%;
+
+		/*	clear: both;  DOESNT WORK ???*/
+		overflow: hidden;
+	}
+
+	ul.img-list img {
+		width: 194px;
+		height: 88px;
+	}
+
+	ul.img-list li  { 
+		margin-top: 14px;
+		/*margin-bottom: 0px; what a space???*/
+		display: inline-block;
+	}
+
+	ul.img-list li:nth-child(odd) { 
+		float:left;
+	}
+	ul.img-list li:nth-child(even) { 
+		float:right;
+	}
+	ul.img-list li:nth-child(1), ul.img-list li:nth-child(2) { 
+		margin-top: 0px;
+	}
+
+
+
+
+/*
+     footer {
+     	position: fixed;
+     	bottom:0px;
+     	width: 100%;/* желательно задавать ширину для absolute*/
+     	/*     	padding: 0px;/*what a margin does.shareBlock have ??*/
+
+  /*   }
+  */
+
+  .article-footer {
+  	width: 100%;
+  	padding-left: 10px;
+  	padding-right: 10px;	
+  }
+  .article-footer p {
+  	margin-top: 22px;
+  	text-align: center;
+  	font-size: 9px;
+  }
+
+  .share-block {
+  	position: fixed;
+  	background-color: #FBAF5D;
+  	border: 1.5px solid #362F2D;
+  	text-align: center;
+  	bottom:0px;
+  	right: 0px;
+  	width: 89px;
+  	height: 71px;
+  	margin-right: 0px;/*what a margin does.shareBlock have ??*/
+  	padding-top: 3px;
+  	font-size: 14px;
+
+  }
+
+  .logo-container {
+  	height: 100%;
+  	width: 100%;
+  	padding-top: 2px;
+  	/*background-color: #00AEEF; */
+  }
+
+  ul.logos-list {
+  	margin: 0px;/*!!! по умолчанию не стоят*/
+  	padding: 0px; 
+  	border: 1px solid #000000;
+  	overflow: hidden;
+  }
+
+
+  ul.logos-list li {
+
+  	margin: 0px 0px 0px 0px;
+  	padding: 0px; 
+  	display: inline-block;		border: 1px solid #000000;
+
+  }
+  ul.logos-list li img {
+  	width: 20px;
+  	height: 20px;
+  }
