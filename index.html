@@ -8,44 +8,54 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
 </head>
 
-<body>
-	<div class="container">
-		<div class="bgrnd">
-			<div class="sheet-semantic">
+<body class="page">
+	<div class="page__container">
+		<div class="background">
+			<div class="background__sheet background__sheet--semantic">
 
 				<article class="main-article">
 
-					<header>
+					<header class="main-article__header">
 						Jean-Paul Sartre: The Words
 					</header>
 
-					<div class="main-article-block">
-						<img id="img1" src="img/img1.jpg" alt="css cup" width="206" height="110">
-						<p>
-							Around 1850, in Alsace, a schoolteacher with more children than he could afford was willing to become a grocer. This unfrocked clerk wanted compensation. Since he was giving up the schooling of minds, one of his sons would school souls. There would be a minister in the family; it would be Charles. Charles stole away; he preferred to take to the road in quest of a circus rider. His portrait was turned to the wall, and the family was forbidden to mention his name. Whose turn was it? Auguste hastened to imitate the paternal sacrifice. He went into business and did well for himself.
-						</p>
-						<img id="img2" src="img/img2.jpg" alt="css love letter" width="139" height="139">
-						<p>
-							His portrait was turned to the wall, and the family was forbidden to mention his name. Whose turn was it? Auguste hastened to imitate the paternal sacrifice. He went into business and did well for himself. There remained Louis, who had no particular bent. The father took this quiet boy in hand and in less than no A
-						</p>
-					</div>
-
-					<article class="sub-article">
-						<div class="sub-article-block">
-							<h2>
-								Gently, mortals, be discreet.
-							</h2>
-							<div class="img-container">
-								<ul class="img-list">
-									<li><img src="img/1.jpg" alt="Kandinsky"></li>
-									<li><img src="img/1.jpg" alt="Kandinsky"></li>
-									<li><img src="img/1.jpg" alt="Kandinsky"></li>
-									<li><img src="img/1.jpg" alt="Kandinsky"></li>
-								</ul>
-							</div>
+					<div class="main-article__block">
+						<div class="main-article__content">
+							<img class="img1" src="img/img1.jpg" alt="css cup" width="206" height="110">
+							<p>
+								Around 1850, in Alsace, a schoolteacher with more children than he could afford was willing to become a grocer. This unfrocked clerk wanted compensation. Since he was giving up the schooling of minds, one of his sons would school souls. There would be a minister in the family; it would be Charles. Charles stole away; he preferred to take to the road in quest of a circus rider. His portrait was turned to the wall, and the family was forbidden to mention his name. Whose turn was it? Auguste hastened to imitate the paternal sacrifice. He went into business and did well for himself.
+							</p>
+							<img class="img2" src="img/img2.jpg" alt="css love letter" width="139" height="139">
+							<p>
+								His portrait was turned to the wall, and the family was forbidden to mention his name. Whose turn was it? Auguste hastened to imitate the paternal sacrifice. He went into business and did well for himself. There remained Louis, who had no particular bent. The father took this quiet boy in hand and in less than no A
+							</p>
 						</div>
-					</article>
-					<footer class="article-footer">
+
+						<article class="sub-article">
+							<div class="sub-article__block">
+								<header class="sub-article__header">
+									Gently, mortals, be discreet.
+								</header>
+								<div class="sub-article__img-container">
+									<ul class="img-list">
+										<li class="img-list__item">
+											<img class="img-list__img" src="img/1.jpg" alt="Kandinsky">
+										</li>
+										<li class="img-list__item">
+											<img class="img-list__img" src="img/1.jpg" alt="Kandinsky">
+										</li>
+										<li class="img-list__item">
+											<img class="img-list__img" src="img/1.jpg" alt="Kandinsky">
+										</li>
+										<li class="img-list__item">
+											<img class="img-list__img" src="img/1.jpg" alt="Kandinsky">
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</div>
+					<footer class="main-article__footer">
 						<p>
 							If I relegate impossible Salvation to the proproom, what remains? A whole man, composed of all men and as good as all of them and no better than any.
 						</p>
@@ -53,38 +63,41 @@
 
 				</article>
 
-				<div class="sheet-pseudo-1"></div>
-				<div class="sheet-pseudo-2"></div>
+				<div class="background__sheet background__sheet--pseudo-light"></div>
+				<div class="background__sheet background__sheet--pseudo-dark"></div>
 			</div>
 
 		</div>
-
-		<footer class="page-footer">
-			<div class="share-block">
-				Share this
-
-				<div class="logo-container">
-					<ul class="logos-list">
-						<li>
-							<a href="">
-								<img src="img/facebook-logo.png" alt="facebook logo" width="20" height="20">
-							</a>
-						</li>				
-						<li>
-							<a href=""><img src="img/skype-logo.png" alt="twitter logo" width="20" height="20">
-							</a>
-						</li>
-						<li>
-							<a href=""><img src="img/instagram-logo.png" alt="instagram logo" width="20" height="20">
-							</a>
-						</li>	
-					</ul>
-				</div>
-
-			</div>
-		</footer>
-
 	</div>
+
+	<footer class="page__footer">
+		<div class="share-block">
+			<div class="share-block__header">
+				Share this
+			</div>
+
+			<div class="share-block__logo-container">
+				<ul class="logos-list">
+					<li class="logos-list__item">
+						<a href="">
+							<img class="logos-list__img" src="img/facebook-logo.png" alt="facebook logo" width="20" height="20">
+						</a>
+					</li>				
+					<li class="logos-list__item">
+						<a href="">
+							<img  class="logos-list__img" src="img/skype-logo.png" alt="twitter logo" width="20" height="20">
+						</a>
+					</li>
+					<li class="logos-list__item">
+						<a href="">
+							<img  class="logos-list__img"  src="img/instagram-logo.png" alt="instagram logo" width="20" height="20">
+						</a>
+					</li>	
+				</ul>
+			</div>
+
+		</div>
+	</footer>
 </body>
 
 </html>
